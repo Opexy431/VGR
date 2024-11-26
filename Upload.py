@@ -26,24 +26,24 @@ def upload_csv_to_mysql(csv_file, table_name):
             cursor.execute(
                 f"""
                 INSERT INTO {table_name} (
-                    `Game Title`, 
-                    `User Rating`, 
-                    `Age Group Targeted`, 
+                    `Game_Title`, 
+                    `User_Rating`, 
+                    `Age_Group_Targeted`, 
                     `Price`, 
-                    `Platform`, 
-                    `Requires Special Device`, 
+                    `platform`, 
+                    `Requires_Special_Device`, 
                     `Developer`, 
                     `Publisher`, 
-                    `Release Year`, 
+                    `Release_Year`, 
                     `Genre`, 
                     `Multiplayer`, 
-                    `Game Length (Hours)`, 
-                    `Graphics Quality`, 
-                    `Soundtrack Quality`, 
-                    `Story Quality`, 
-                    `User Review Text`, 
-                    `Game Mode`, 
-                    `Min Number of Players`
+                    `Game_Length_Hours`, 
+                    `Graphics_Quality`, 
+                    `Soundtrack_Quality`, 
+                    `Story_Quality`, 
+                    `User_Review_Text`, 
+                    `Game_Mode`, 
+                    `Min_Number_of_Players`
                 ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
                 """,
                 (
